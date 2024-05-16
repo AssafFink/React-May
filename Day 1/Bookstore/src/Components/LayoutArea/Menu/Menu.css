@@ -1,0 +1,8 @@
+.Menu > a {
+    color: orange;
+    font-weight: bold;
+}
+
+.Menu {
+    background-color: black;
+}

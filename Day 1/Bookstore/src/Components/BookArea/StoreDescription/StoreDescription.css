@@ -1,0 +1,8 @@
+.StoreDescription > p {
+	color: darkred;
+    font-size: x-large;
+}
+
+.StoreDescription > img {
+    width: 100px;
+}
