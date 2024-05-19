@@ -9,7 +9,7 @@ export function Clicker(): JSX.Element {
     function clickMe() {
         setCounter(counter + 1);
     }
-
+        
     return (
         <div className="Clicker">
 			<img src={imageSource} onClick={clickMe} />

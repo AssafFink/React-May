@@ -7,14 +7,19 @@ export function Clock(): JSX.Element {
 
     useEffect(()=>{
 
-        setInterval(()=>{
+        const timerId = setInterval(()=>{
             const now = new Date();
             setTime(now.toLocaleTimeString());
             console.log(now.toLocaleTimeString());
         }, 1000);
+
+        // Following function will be done when component destroyed or when useEffect reinvoked:
+        return () => {
+            // ... closing the timer...
+            clearInterval(timerId);
+        };
     
     }, []);
-
 
     return (
         <div className="Clock">
