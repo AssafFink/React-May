@@ -17,7 +17,9 @@ export function Search(): JSX.Element {
     return (
         <div className="Search">
 			<label>Search website: </label>
+
             <input type="search" onChange={handleChange} value={value} />
+            
             <button onClick={performSearch}>🔎</button>
             <span>Searching for: {value}</span>
         </div>
